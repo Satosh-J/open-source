@@ -7,6 +7,7 @@ ReactDOM.render(
 React.createElement(Connector, {}, null),
 document.getElementById('btn_connect')
 );
+
 ReactDOM.render(
 React.createElement(Minter, {}, null),
 document.getElementById('btn_mint')
