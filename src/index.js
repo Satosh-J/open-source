@@ -1,15 +1,13 @@
 import React, {Component} from 'react'
 import ReactDOM from 'react-dom'
-
-class App extends Component {
- render() {
-   return (
-     <div>This is a inside of Webflow!</div>
-  )
-}
-}
+import Minter from './components/Minter';
+import Connector from './components/Connect';
 
 ReactDOM.render(
-React.createElement(App, {}, null),
-document.getElementById('react-target')
+React.createElement(Connector, {}, null),
+document.getElementById('btn_connect')
+);
+ReactDOM.render(
+React.createElement(Minter, {}, null),
+document.getElementById('btn_mint')
 );
